@@ -17,7 +17,10 @@ class App < Sinatra::Base
     end
     
     @heros = Hero.all
-    puts @heros.name
+    
+    @heros.each do |hero|
+      puts hero.name 
+    ned
     
     erb :team
   end
