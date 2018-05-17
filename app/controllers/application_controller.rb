@@ -20,7 +20,7 @@ class App < Sinatra::Base
     
     @heros.each do |hero|
       puts hero.name 
-    ned
+    end
     
     erb :team
   end
